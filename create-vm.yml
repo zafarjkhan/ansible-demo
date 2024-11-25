@@ -30,7 +30,7 @@
           num_cpus: "{{ vm_hw_cpu_num }}"
         customization:
           password: "VMware123!"
-          hostname: "VMTest123!"
+          hostname: "VMTest123"
         networks:
         - name: "{{ vm_net_name }}"
           device_type: "{{ vm_net_type }}"
