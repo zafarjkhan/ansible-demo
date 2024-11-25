@@ -11,7 +11,7 @@ state: "present"
 guest_id: "windows2019srvNext_64Guest"
 cluster: "cl01"
 disk:
-- size_gb: "80"
+- size_gb: "100"
   type: "thin"
   datastore: "localssd"
 hardware:
