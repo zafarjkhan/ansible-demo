@@ -1,0 +1,13 @@
+---
+- name: Perform Windows Customisation 
+  hosts: windows_servers
+  vars:
+    ansible_connection: winrm
+    ansible_user: administrator
+    ansible_password: VMware123!
+
+  tasks:
+  - name: Create directory structure
+    ansible.windows.win_file:
+      path: C:\Temp\folder\subfolder
+      state: directory
