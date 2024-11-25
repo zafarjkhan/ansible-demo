@@ -1,6 +1,6 @@
 ---
 - name: Perform Windows Customisation 
-  hosts: windows_servers
+  hosts: all
   vars:
     ansible_connection: winrm
     ansible_user: administrator
