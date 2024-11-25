@@ -1,0 +1,28 @@
+---
+hostname: "vc01.thecloudkb.com"
+username: "administrator@vsphere.local"
+password: "VMware1!"
+validate_certs: "false"
+datacenter: "dc01"
+template: "Win2022Template"
+name: "VMTest"
+folder: "ansible"
+state: "present"
+guest_id: "windows2019srv_64Guest"
+cluster: "cl01"
+disk:
+- size_gb: "80"
+  type: "thin"
+  datastore: "localssd"
+hardware:
+memory_mb: "4096"
+num_cpus: "2"
+network:
+- name: "VM Network"
+  start_connected: "yes"
+  device_type: "vmxnet3"
+  type: "static"
+  ip: "192.168.1.110"
+  netmask: "255.255.255.0"
+  gateway: "192.168.1.1"
+  dns_servers: "{192.168.1.200"
