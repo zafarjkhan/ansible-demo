@@ -8,7 +8,7 @@ template: "Win2022Template"
 name: "VMTest"
 folder: "ansible"
 state: "present"
-guest_id: "windows2019srv_64Guest"
+guest_id: "windows2019srvNext_64Guest"
 cluster: "cl01"
 disk:
 - size_gb: "80"
